@@ -2,6 +2,7 @@
 layout: tutorial
 title: Porting a NexGen Model to VR Chat
 subtitle: A Tutorial by DandyBouquet. Last Updated 2024/6/5
+permalink: /tutorials/nexgen-vrchat
 ---
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
@@ -25,42 +26,52 @@ Here are the tools you will need to create your avatar.
 
 ## Blender
 Blender is a 3D modeling software. This will be used to set up your model’s geometry and textures before turning it into an avatar. I used Blender 3.4 for this tutorial, but newer versions should work too.
-Download Link: https://www.blender.org/download/
+
+[Blender Downloads](https://www.blender.org/download/)
 
 ### Mesh Data Transfer Add-on
 This Blender add-on is needed for creating outfits, so that shape keys can be copied from your body to the outfit.
-Download Link: https://mmemoli.gumroad.com/l/tOKEh
+
+[Add-On Link](https://mmemoli.gumroad.com/l/tOKEh)
 
 ### Source Tools Add-on
 This Blender add-on is needed to import Source Engine model files (.smd and .dmx) into Blender.
-Download Link: https://developer.valvesoftware.com/wiki/Blender_Source_Tools
+
+[Source Tools Link](https://developer.valvesoftware.com/wiki/Blender_Source_Tools)
 
 ## NexGen Sources
 These include model files for NexGen models, which you will likely need for its base bodies and head models. Your custom NexGen model may not come with a body, so it needs to be grabbed from the NexGen sources.
-Download Links:
-* Mega Folder: https://mega.nz/folder/icN00KzR#IpzcPH9VVwIJiFaTscOoxg/folder/OVUiVAxJ
-* MediaFire Folder: http://www.mediafire.com/folder/o7balb95o1df8/Source_Files
+
+**Download Links:**
+* [Mega Folder](https://mega.nz/folder/icN00KzR#IpzcPH9VVwIJiFaTscOoxg/folder/OVUiVAxJ)
+* [MediaFire Folder](http://www.mediafire.com/folder/o7balb95o1df8/Source_Files)
 
 ## Crowbar
 Crowbar is a standalone tool used to decompile your model (/mdl file) into a usable format for Blender (.smd).
-Download Link: https://steamcommunity.com/groups/CrowbarTool
+
+[Crowbar Link](https://steamcommunity.com/groups/CrowbarTool)
 
 ## VTFEdit
 VTFEdit is a standalone tool used to convert your texture files from a Valve texture format into a standard format like png or tga.
-Download Link: https://github.com/Sky-rym/VTFEdit-Reloaded/releases
+
+[VTFEdit Releases](https://github.com/Sky-rym/VTFEdit-Reloaded/releases)
 
 ## VR Chat Creator Companion
 The VR Chat Creator Companion is used to set up Unity projects for creating VRChat avatars.
-Download Link: https://vcc.docs.vrchat.com/
+
+[Download Link](https://vcc.docs.vrchat.com/)
 
 ## Unity
 Unity is the main tool used to configure and upload your avatar.
-Download Link: https://unity.com/download
-Reference Video: https://www.youtube.com/watch?v=bSwMz4WcajQ
+
+[Download Links](https://unity.com/download)
+
+[Installation Reference Video](https://www.youtube.com/watch?v=bSwMz4WcajQ)
 
 ### VRC Fury
 VRC Fury is a Unity plugin used mainly for adding outfits to your avatar.
-Download Link: https://vrcfury.com/download
+
+[VRCFury Downloads](https://vrcfury.com/download)
 
 
 # Preparing the Model
@@ -221,7 +232,7 @@ Right click in the Assets folder, then select Create > Folder. Name the folder �
   
 
 ## Import FBX File
-https://www.youtube.com/watch?v=bSwMz4WcajQ
+[Reference Video](https://www.youtube.com/watch?v=bSwMz4WcajQ)
 Drag your exported FBX file into the Assets folder and wait for it to complete. Click on the added FBX file. Look at the Inspector panel on the right. Select the Rig button. then change the Animation Type to Humanoid and click Apply. This will automatically map your model’s bones to a humanoid figure
 
 
@@ -410,8 +421,8 @@ Repeat this process for as many facial expressions as you like for right and lef
 
 # Adding Phys Bones
 Reference Videos:
-1. Phys Bones https://www.youtube.com/watch?v=PTTnWUkswkU
-2. Phys Bone Colliders https://www.youtube.com/watch?v=pT6wO01dwTU
+1. [Phys Bones](https://www.youtube.com/watch?v=PTTnWUkswkU)
+1. [Phys Bone Colliders](https://www.youtube.com/watch?v=pT6wO01dwTU)
 
 
 Phys Bones add movement and interactions to your avatar, such as a bouncy mane, scratchable ears, or jiggly breasts. They require some tuning to look good, and will be different for each avatar’s unique mane/tail style. This tutorial will not go in-depth into Phys Bone configuration, so you should watch the reference videos if you want to learn more.
@@ -453,7 +464,7 @@ To add a custom collider, go to the bone that you want it to collide with, and a
 Find your outfit models from your preferred online sources. SFMLab is a good resource to look for models that match the NexGen body. There are several packs you can find that include a lot of outfits in one. They will need to be decompiled, but they should fit the best to your model’s body.
 
 
-Here is a downlink link to an outfit pack which includes the shirt and shorts I show in this tutorial: https://mega.nz/file/pE1VmIbb#gjmcZpqIZL4mfPPeDCA0IYelSW6yEKuAgwbRuMS9lLk
+Here is a downlink link to an outfit pack which includes the shirt and shorts I show in this tutorial: [Download Link](https://mega.nz/file/pE1VmIbb#gjmcZpqIZL4mfPPeDCA0IYelSW6yEKuAgwbRuMS9lLk)
 
 
 I have also customized the textures to match my character’s Park Ranger uniform.
@@ -466,7 +477,7 @@ Create a new blender file and delete the default objects in the hierarchy. Impor
   
 
 ### Transfer Bone Weights
-Reference Video: https://www.youtube.com/watch?v=yr5KRYz5ybs
+[Reference Video](https://www.youtube.com/watch?v=yr5KRYz5ybs)
 
 
 This step will copy all bone weights from your body to your outfit, so that the outfit will move when your body moves. This method of automatic skinning will work decently, especially for tight-fitting outfits, but it won’t work well in crease areas, like between the fingers and the crotch.
@@ -489,7 +500,7 @@ Next, go to the Modifiers tab. Delete the armature modifier if there is one alre
 Finally, Add anArmature modifier, and set the Object to your clothes’ root armature.
 
 ### Transfer Shape Keys
-Reference Video: https://www.youtube.com/watch?v=Q13pBes8Wfc
+[Reference Video](https://www.youtube.com/watch?v=Q13pBes8Wfc)
 
 
 This step will copy all shape keys from your body to your outfit.
@@ -520,7 +531,7 @@ Another issue you may run into is if your clothes are transparent on one side, w
 Before exporting, make sure to hide any elements you don’t want added. In my case, I hid the body because I only wanted the clothes. File > Export > FBX. Check Visible Only, then under the Armature section, uncheck Add Leaf Bones.
 
 ## Import into Unity
-Reference Video: https://www.youtube.com/watch?v=aHFulMbnWwA
+[Reference Video](https://www.youtube.com/watch?v=aHFulMbnWwA)
 
 
 Drag the outfit FBX file into your Unity Assets folder, then drag that into your hierarchy, underneath your avatar. Also drag your texture files into your Assets folder. Select the added outfit prefab, then change its scale to 1. Verify your outfit now shows up in the editor on top of your body. Click on your meshes, and check Update When Offscreen in their Skinned Mesh Renderer components.
@@ -585,13 +596,13 @@ TODO
 
 Here are some ideas for additional customization you could try.
 1. Add Eye movement. This would require adding eye bones tied to pupil meshes. I have tried this with mixed success. My main issues were the eyes/pupils clipping through the face.
-2. Use Vizemes for lip sync. This would give you more accurate lip syncing. The NexGen head model doesn’t include vizeme blend shapes, so this may be tricky to do.
-3. Add animations like dances.
-4. Use custom shaders. The lilToon shader is a popular one for a more cartoon-like style.
-5. Create a second version of your avatar that can be exported as a VRM file. VRMs can be used as VTuber models or in games like Lethal Company (with the VRM mod).
+1. Use Vizemes for lip sync. This would give you more accurate lip syncing. The NexGen head model doesn’t include vizeme blend shapes, so this may be tricky to do.
+1. Add animations like dances.
+1. Use custom shaders. The lilToon shader is a popular one for a more cartoon-like style.
+1. Create a second version of your avatar that can be exported as a VRM file. VRMs can be used as VTuber models or in games like Lethal Company (with the VRM mod).
 
 # Credits
 * Sylvia Evergreen character designed and owned by DandyBouquet
-* Sylvia Evergreen NexGen model made by Acey
+* Sylvia Evergreen NexGen model made by [Acey](https://x.com/sgt_acey)
 * Special thanks to IceAspect and Tatemil for helping me through the process
-* Thanks to my brother trigger_death for helping set up this webpage
+* Thanks to my brother trigger_segfault for helping set up this webpage
