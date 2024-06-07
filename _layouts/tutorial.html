@@ -16,9 +16,25 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
+
+    <link rel="stylesheet" href="/assets/css/tutorial.css" />
+
+    <!-- Click to Image Zoom: http://dynamicdrive.com/dynamicindex4/fullscreenimageviewer/ -->
+    <link rel="stylesheet" href="/assets/css/ddfullscreenimageviewer.css" />
+    <style>
+    .expandable-img{
+      cursor: pointer;
+    }
+    </style>
+    <script src="/assets/js/ddfullscreenimageviewer.js"></script>
+    <script>
+    jQuery(function(){ // on DOM Load
+      $('img.expandable-img').fullscreenimage({scale: 1});
+    });
+    </script>
+    
   </head>
   <body>
-
     <div class="wrapper">
 
       <section>
@@ -27,6 +43,10 @@
           <p>{{ page.subtitle }}</p>
           <hr>
         </div>
+
+        <img src="/assets/images/vrchat/title_preview.png" class="expandable-img"></img>
+        <hr>
+
 
         <h1>Table of Contents</h1>
         {% include toc.html html=content %}
