@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 title: Porting a NexGen Model to VR Chat
-subtitle: A Tutorial by DandyBouquet. Last Updated 2024/6/5
+subtitle: "A Tutorial by DandyBouquet. Last Updated 2024/6/5"
 permalink: /tutorials/nexgen-vrchat
 ---
 
@@ -485,7 +485,7 @@ Here are some ideas for additional customization you could try.
 1. Create a second version of your avatar that can be exported as a VRM file. VRMs can be used as VTuber models or in games like Lethal Company (with the VRM mod).
 
 # Credits
-* Sylvia Evergreen character designed and owned by DandyBouquet
+* Sylvia Evergreen character designed and owned by [DandyBouquet](https://dandybouquet.carrd.co/)
 * Sylvia Evergreen NexGen model made by [Acey](https://x.com/sgt_acey)
 * Special thanks to IceAspect and Tatemil for helping me through the process
 * Thanks to my brother [trigger_segfault](https://github.com/trigger-segfault) for helping set up this webpage
