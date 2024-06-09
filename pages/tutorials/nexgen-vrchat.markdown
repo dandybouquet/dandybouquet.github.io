@@ -454,28 +454,29 @@ Now, go to your Expressions Parameters, and Add a new Bool parameter with the sa
 
 ![image-title-here](/assets/images/unity/vrcfury_toggle_params.png){:class="expandable-img"}
 
-Your outfits should now be ready to test in VRChat! When testing, ensure the blend shapes and posing matches between your outfit and body, and that minimal clipping occurs as you move around. Also check that the toggles are working in your expressions menu.
-
 ## Result
-TODO
+
+Your outfits should now be ready to test in VRChat! When testing, ensure the blend shapes and posing matches between your outfit and body, and that minimal clipping occurs as you move around. Also check that the toggles are working in your expressions menu.
 
 ![image-title-here](/assets/images/vrchat/result.png){:class="expandable-img"}
 
-
 # Publishing your Avatar
-When you are ready to use your avatar in-game with others,
-VRChat SDK 
-TODO
 
+When you are ready to use your avatar in-game with others, you will need to publish it first.
+
+Open the VRChat SDK. Give your avatar a name and an optional description. You can also specify a thumbnail, either with an image upload or by taking a picture of the scene. You should check Suxually Suggestive and Adult Language and Themes if your avatar has NSFW bits (which NexGen models do by default). Scroll down to the Online Publishing section, then check the box and click Build & Publish.
+
+![image-title-here](/assets/images/unity/publish.png){:class="expandable-img"}
+
+Use your avatar responsibly. Do not use it in public servers if it is NSFW, you will get banned. I reccomend only using your avatar with close friends until you can make it safe.
 
 ## Sharing your Avatar
-TODO
 
-
-If you want to keep the avatar private while still sharing it with another user, then you will need to send the unity project (as a unitypackage) to that user and they will have to publish it themselves.
+There are a couple ways to share your avatar with someone. If you want to keep your avatar private while still sharing it with another user, then you will need to send the unity project (as a unitypackage) to that user and they will have to publish it themselves. The other (and easiest option) is to make it public so anyone could use it, but that's not always desireable.
 
 # Conclusion
-TODO
+
+And that's it for the tutorial! You should now have a working VRChat avatar made from a NexGen model. There's much more advanced topics out there that you can look into, but I hope this helped cover the basics. Please let me know if you have any feedback about this tutorial, I would appreciate it.
 
 Here are some ideas for additional customization you could try.
 1. Add Eye movement. This would require adding eye bones tied to pupil meshes. I have tried this with mixed success. My main issues were the eyes/pupils clipping through the face.
