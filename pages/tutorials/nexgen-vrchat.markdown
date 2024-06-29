@@ -490,3 +490,4 @@ Here are some ideas for additional customization you could try.
 * Sylvia Evergreen NexGen model made by [Acey](https://x.com/sgt_acey)
 * Special thanks to IceAspect and Tatemil for helping me through the process
 * Thanks to my brother [trigger_segfault](https://github.com/trigger-segfault) for helping set up this webpage
+* VRChat World shown in title image is called Cabin in the Woods, by Enverex
